@@ -47,7 +47,7 @@ class SocketService extends ChangeNotifier {
   getMessages() async {
     final audioPlayer = AudioPlayer();
     _socket.on("recibir-mensaje", (payload) {
-      audioPlayer.play(AssetSource("sounds/sonido.mp3"));
+      audioPlayer.play(AssetSource("sonido.mp3"));
       by = payload["by"];
       messages.add(payload);
       notifyListeners();
