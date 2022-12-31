@@ -23,7 +23,7 @@ class SocketService extends ChangeNotifier {
 
   void _initConfig() {
     // Dart client
-    _socket = io.io('http://192.168.0.101:8080', {
+    _socket = io.io('https://chat-app-jr.up.railway.app', {
       'transports': ['websocket'],
       'autoConnect': true,
       "forceNew": true,

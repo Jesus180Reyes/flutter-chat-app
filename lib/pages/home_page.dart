@@ -43,7 +43,7 @@ class _MessagesBox extends StatelessWidget {
     final socket = Provider.of<SocketService>(context).messages;
     final send = Provider.of<SocketService>(context);
     final by = Provider.of<SocketService>(context).by;
-    final date = DateTime.now().toUtc();
+    final date = DateTime.now().toLocal();
     return Column(
       children: [
         DateChip(
